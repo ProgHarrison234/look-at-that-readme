@@ -62,39 +62,38 @@ async function promptUser() {
 });
 }
 function generateReadMe (answers) {
-    return `
-    # ${answers.projectT}
-    ------------------------------------------------------------
-    ## Program Description
-    ${answers.description}
-    ------------------------------------------------------------
-    ## Table of Contents 
-        1. Product Title and Description
-        2. Table of Contents
-        3. Uses
-        4. Installation
-        5. Technologies
-        6. Contributors
-        7. Contact
-    ------------------------------------------------------------
-    ## Uses
-    ${answers.uses}
-    ------------------------------------------------------------
-    ## Installation
-    Below is how you install and run the program
-    ${answers.install}
-    ------------------------------------------------------------
-    ## Techonologies
-    The Technologies are as follows:
-    ${answers.technologies}
-    ------------------------------------------------------------
-    ## Contributors
-    ${answers.contributions}
-    ------------------------------------------------------------
-    ## Contact Me
-    My GitHub username is ${answers.gitHubU},
-    Feel free to contact me at ${answers.gitHubE}
-    `;
+    return `# ${answers.projectT}
+
+## Program Description
+${answers.description}
+
+## Table of Contents 
+1. Product Title and Description
+2. Table of Contents
+3. Uses
+4. Installation
+5. Technologies
+6. Contributors
+7. Contact
+
+## Uses
+${answers.uses}
+
+## Installation
+Below is how you install and run the program
+${answers.install}
+
+## Techonologies
+The Technologies are as follows:
+${answers.technologies}
+
+## Contributors
+${answers.contributions}
+
+## Contact Me
+My GitHub username is ${answers.gitHubU},
+Feel free to contact me at ${answers.gitHubE}
+`;
 }
 promptUser();
 
